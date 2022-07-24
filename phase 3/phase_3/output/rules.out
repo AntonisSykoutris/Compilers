@@ -1,0 +1,109 @@
+idlist ->  
+const -> INT_CONST
+primary -> const
+term -> primary
+expr -> term
+returnstmt -> return expr;
+stmt -> returnstmt;
+stmt -> stmts stmt
+block -> { stmts }
+stmt -> funcdef;
+stmt -> stmts stmt
+idlist ->  
+idlist ->  
+const -> INT_CONST
+primary -> const
+term -> primary
+expr -> term
+returnstmt -> return expr;
+stmt -> returnstmt;
+stmt -> stmts stmt
+block -> { stmts }
+primary -> ( funcdef )
+term -> primary
+expr -> term
+returnstmt -> return expr;
+stmt -> returnstmt;
+stmt -> stmts stmt
+block -> { stmts }
+stmt -> funcdef;
+stmt -> stmts stmt
+idlist ->  
+const -> INT_CONST
+primary -> const
+term -> primary
+expr -> term
+returnstmt -> return expr;
+stmt -> returnstmt;
+stmt -> stmts stmt
+block -> { stmts }
+stmt -> funcdef;
+stmt -> stmts stmt
+idlist -> ID
+idlist -> idlist COMMA ID
+idlist -> idlist COMMA ID
+lvalue -> ::ID
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+elist -> expr
+normalcall -> ( elist )
+callsuffix -> normalcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr;
+stmt -> stmts stmt
+block -> { stmts }
+lvalue -> ID
+elist ->  
+normalcall -> ( elist )
+callsuffix -> normalcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+elist -> expr
+lvalue -> ID
+elist ->  
+normalcall -> ( elist )
+callsuffix -> normalcall
+call -> lvalue callsuffix
+elist ->  
+call -> call ( elist )
+primary -> call
+term -> primary
+expr -> term
+elist -> , expr
+idlist -> ID
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+returnstmt -> return expr;
+stmt -> returnstmt;
+stmt -> stmts stmt
+block -> { stmts }
+lvalue -> ID
+elist ->  
+normalcall -> ( elist )
+callsuffix -> normalcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+elist -> expr
+call -> ( funcdef ) ( elist )
+primary -> call
+term -> primary
+expr -> term
+elist -> , expr
+call -> ( funcdef ) ( elist )
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr;
+stmt -> stmts stmt
+program -> stmts
