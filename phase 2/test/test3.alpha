@@ -1,0 +1,4 @@
+x = print(5);    //ok
+x = print;      //ok
+print(5);      //ok
+print = 3;    //error var shadows libfunc
