@@ -1,0 +1,28 @@
+                                   1: #1    "x"    ID
+1: #2    "="    OPERATOR
+1: #3    "2"    INT_CONST
+1: #4    ";"    PUNCTUATION
+1: #5    ""    LINE_COMMENT
+7: #6    "3 - 7"    BLOCK_COMMENT
+9: #7    "this"    ID
+9: #8    "a"    ID
+9: #9    "block"    ID
+9: #10    "comment"    ID
+15: #11    "11 - 15"    BLOCK_COMMENT
+18: #12    "var"    ID
+18: #13    "="    OPERATOR
+18: #14    "a random string"    STRING
+18: #15    ";"    PUNCTUATION
+20: #16    "function"    KEYWORD
+20: #17    "("    PUNCTUATION
+20: #18    "int"    ID
+20: #19    ","    PUNCTUATION
+20: #20    "string"    ID
+20: #21    ")"    PUNCTUATION
+20: #22    "["    PUNCTUATION
+20: #23    "string"    ID
+20: #24    "]"    PUNCTUATION
+20: #25    ";"    PUNCTUATION
+22: #26    "invalid"    ID
+22: #27    ""    LINE_COMMENT
+26: #28    "25 - 26"    BLOCK_COMMENT

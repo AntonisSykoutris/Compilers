@@ -1,0 +1,28 @@
+!invalid    //hello
+x = 2;                      /////comment
+
+?? ggrte ?? 5
+
+/*
+
+
+
+*/
+
+this a block comment
+
+/*
+
+this is another block comment
+
+*/
+
+
+var = "a random string";
+
+function(int, string) [string];
+
+
+
+/*
+*/
