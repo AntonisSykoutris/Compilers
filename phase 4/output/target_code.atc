@@ -1,0 +1,39 @@
+magic number: 384838503862
+	strConsts: 1
+		size: 5, value: hello
+arrays:
+	numConsts: 4
+		index: 1, value: 1.000000
+		index: 2, value: 1.100000
+		index: 3, value: 1.000000
+		index: 4, value: 1.000000
+	userFunctions: 2
+		address: 10, localsize: 0 id: foo
+		address: 15, localsize: 2 id: goo
+	libFunctions: 1
+		size: 5, id: print
+
+total instructions: 19
+
+Ind   Opcode          Result                Arg1                  Arg2
+
+[000] assign_v        global_a  (02) 0      string_a  (06) 1      
+[001] assign_v        global_a  (02) 1      global_a  (02) 0      
+[002] assign_v        global_a  (02) 2      number_a  (05) 1      
+[003] assign_v        global_a  (02) 1      global_a  (02) 2      
+[004] assign_v        global_a  (02) 3      number_a  (05) 2      
+[005] assign_v        global_a  (02) 1      global_a  (02) 3      
+[006] pusharg_v       global_a  (02) 0      
+[007] call_v          libfunc_a (10) 1      
+[008] assign_v        global_a  (02) 1      retval_a  (11) 0      
+[009] jump_v          label_a   (01) 12     
+[010] funcenter_v     userfunc_a(09) 10     
+[011] funcexit_v      userfunc_a(09) 10     
+[012] assign_v        global_a  (02) 1      global_a  (02) 0      
+[013] add_v           global_a  (02) 0      global_a  (02) 0      number_a  (05) 3      
+[014] jump_v          label_a   (01) 18     
+[015] funcenter_v     userfunc_a(09) 15     
+[016] add_v           local_a   (04) 1      local_a   (04) 0      number_a  (05) 4      
+[017] funcexit_v      userfunc_a(09) 15     
+[018] call_v          userfunc_a(09) 10     
+[019] assign_v        global_a  (02) 1      retval_a  (11) 0      

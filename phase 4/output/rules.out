@@ -1,0 +1,76 @@
+lvalue -> ID
+const -> STRING
+primary -> const
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr
+stmt -> expr;
+stmt -> stmts stmt
+lvalue -> ID
+const -> INT_CONST
+primary -> const
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr
+stmt -> expr;
+stmt -> stmts stmt
+lvalue -> ID
+const -> REAL_CONST
+primary -> const
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr
+stmt -> expr;
+stmt -> stmts stmt
+lvalue -> ID
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+elist -> expr
+normalcall -> ( elist )
+callsuffix -> normalcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr;
+stmt -> stmts stmt
+idlist ->  
+block -> { stmts }
+stmt -> funcdef;
+stmt -> stmts stmt
+lvalue -> ID
+term -> lvalue++
+expr -> term
+stmt -> expr;
+stmt -> stmts stmt
+idlist ->  
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+const -> INT_CONST
+primary -> const
+term -> primary
+expr -> term
+expr -> expr + expr
+stmt -> expr;
+stmt -> stmts stmt
+block -> { stmts }
+stmt -> funcdef;
+stmt -> stmts stmt
+lvalue -> ID
+elist ->  
+normalcall -> ( elist )
+callsuffix -> normalcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr;
+stmt -> stmts stmt
+program -> stmts

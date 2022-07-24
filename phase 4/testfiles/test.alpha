@@ -1,0 +1,8 @@
+a = "hello";
+b = 1;
+c = 1.1;
+print(a);
+function foo(){}
+a++;
+function goo(){x + 1;}
+foo();
